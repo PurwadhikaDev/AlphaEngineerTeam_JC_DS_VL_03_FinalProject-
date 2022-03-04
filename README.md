@@ -31,15 +31,15 @@ To increase the effectiveness of the campaign, one of the methods is to do Custo
 # Business Problem Statement:
 ## Business Problem Statement for Machine Learning
 ### How to segment customers so we can divide customers based on their shopping behavior?
-- Value: Customer Segmentation
-- Goals: Cluster customers based on their shopping behavior
+- **Value:** Customer Segmentation
+- **Goals:** Cluster customers based on their shopping behavior
 ### How to segment sellers so we can divide sellers based on their selling behavior?
-- Value: Seller Segmentation
-- Goals: Cluster seller based on their selling behavior
+- **Value:** Seller Segmentation
+- **Goals:** Cluster seller based on their selling behavior
 
 # Data Understanding
 
-![Olist Logo](/img/img3.png)
+![Data Schema](/img/img3.png)
 
 Based on the problem statement above, through data analysis our team will provide  solutions for the Brazilian E-commerce company Olist. The dataset provided has been gathered from the year 2016 until the year 2018. The data contains various information regarding customers, sellers and products. In our EDA, we only use columns associated with customers and sellers transactions, other columns were dropped. 
 
@@ -47,7 +47,7 @@ Based on the problem statement above, through data analysis our team will provid
 | Attribute   | Data Type    | Description |
 | ----------- | -----------  | ----------- |
 | order_id    | object        | Unique ID generated on every transaction |
-| order_purchase_stamp  | datetime64[s]  | Timestamp generated on every purchase |
+| order_purchase_stamp  | datetime64[s] | Timestamp generated on every purchase |
 | product_id  | object  | Unique ID to identify different product |
 | price | float64 | Price of product |
 | payment_type | object | Payment method used by customer during transaction
@@ -82,6 +82,8 @@ From the RFM scores, we can cluster different customers together to its respecti
 ## K-Means Clustering:
 Our team uses the K-Means method to cluster the different sellers to its respective clusters.
 
+![Violin Plot](/img/violin.png)
+
 ## Business Recommendation:
 | RFM Segment | Description |
 | ----------- | ----------- |
@@ -108,7 +110,7 @@ Our team uses the K-Means method to cluster the different sellers to its respect
     - Olist_products_dataset.csv
     - Olist_sellers_dataset.csv
     - Product_category_name_translatioon.csv
-- 
+- Olist_Notebook.ipynb
 
 # References:
 - https://www.statista.com/forecasts/251659/e-commerce-users-in-brazil
